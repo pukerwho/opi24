@@ -36,7 +36,7 @@
                 <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
               </svg>
-              2 хв.читання
+              <?php echo getTimeReading($main_posts[0]['id']); ?> хв.читання
             </div>
           </div>
           <div class="text-white hover:text-gray-300 transition-colors">
@@ -78,7 +78,7 @@
                 <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
               </svg>
-              2 хв.читання
+              <?php echo getTimeReading($main_posts[1]['id']); ?> хв.читання
             </div>
           </div>
           <div class="text-white hover:text-gray-300 transition-colors">
@@ -117,7 +117,7 @@
                 <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
               </svg>
-              2 хв.читання
+              <?php echo getTimeReading($main_posts[2]['id']); ?> хв.читання
             </div>
           </div>
           <div class="text-white hover:text-gray-300 transition-colors">
@@ -177,7 +177,7 @@
                 <?php echo get_the_author(); ?>
               <?php endif; ?>
             </span>
-            <span class="text-gray-500 text-sm">2 хв.читання</span>
+            <span class="text-gray-500 text-sm"><?php echo getTimeReading(get_the_ID()); ?> хв.читання</span>
           </div>
           <div class="text-gray-500 relative">
             <a href="<?php the_permalink(); ?>" class="w-full h-full absolute left-0 top-0 z-1" target="_blank"></a>
@@ -266,7 +266,7 @@
               <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              2 хв.читання
+              <?php echo getTimeReading($our_post['id']); ?> хв.читання
             </div>
           </div>
         </div>
@@ -359,7 +359,7 @@
                     <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    2 хв.читання
+                    <?php echo getTimeReading(get_the_ID()); ?> хв.читання
                   </div>
                 </div>
               </div>
