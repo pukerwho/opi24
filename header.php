@@ -35,10 +35,10 @@ if ( is_singular( 'post' ) ) {
 <?php wp_body_open(); ?>
 <header class="bg-indigo-900">
   <div class="container mx-auto px-2 lg:px-16">
-    <nav class="flex items-center justify-between h-16">
+    <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a href="<?php echo home_url(); ?>" class="text-2xl font-extrabold text-white">
-        OPI<span class="text-yellow-400">24</span>
+        Без <span class="text-yellow-400">Брехні</span>
       </a>
 
       <!-- Navigation Links -->
@@ -74,7 +74,7 @@ if ( is_singular( 'post' ) ) {
           </svg>
         </button>
       </div>
-    </nav>
+    </div>
   </div>
 </header>
 

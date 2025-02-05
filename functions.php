@@ -129,17 +129,17 @@ add_filter('get_the_archive_title', function ($title) {
   return $title;
 });
 
-function wpa_course_post_link( $post_link, $id = 0 ){
-    $post = get_post($id);  
-    if ( is_object( $post ) ){
-        $terms = wp_get_object_terms( $post->ID, 'board' );
-        if( $terms ){
-          return str_replace( '%board%' , $terms[0]->slug , $post_link );
-        }
-    }
-    return $post_link;  
-}
-add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );
+// function wpa_course_post_link( $post_link, $id = 0 ){
+//     $post = get_post($id);  
+//     if ( is_object( $post ) ){
+//         $terms = wp_get_object_terms( $post->ID, 'board' );
+//         if( $terms ){
+//           return str_replace( '%board%' , $terms[0]->slug , $post_link );
+//         }
+//     }
+//     return $post_link;  
+// }
+// add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );
 
 function tutCount($id) {
   if ( metadata_exists( 'post', $id, 'post_count' ) ) {
