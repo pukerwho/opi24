@@ -33,11 +33,7 @@
           </svg>
         </div>
         <span class="font-medium">
-          <?php if (carbon_get_the_post_meta('crb_post_author')): ?>
-            <?php echo carbon_get_the_post_meta('crb_post_author'); ?>
-          <?php else: ?>
-            <?php echo get_the_author(); ?>
-          <?php endif; ?>
+          <?php echo get_the_author(); ?>
         </span>
         <div class="hidden items-center text-gray-500">
           <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">

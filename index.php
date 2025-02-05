@@ -171,11 +171,7 @@
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">
             <span class="font-medium">
-              <?php if (carbon_get_the_post_meta('crb_post_author')): ?>
-                <?php echo carbon_get_the_post_meta('crb_post_author'); ?>
-              <?php else: ?>
-                <?php echo get_the_author(); ?>
-              <?php endif; ?>
+              <?php echo get_the_author(); ?>
             </span>
             <span class="text-gray-500 text-sm"><?php echo getTimeReading(get_the_ID()); ?> хв.читання</span>
           </div>

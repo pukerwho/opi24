@@ -34,11 +34,7 @@
               </svg>
             </div>
             <div class="font-bold underline text-gray-900 opacity-75">
-              <?php if (carbon_get_the_post_meta('crb_post_author')): ?>
-                <?php echo carbon_get_the_post_meta('crb_post_author'); ?>
-              <?php else: ?>
-                <?php echo get_the_author(); ?>
-              <?php endif; ?>
+              <?php echo get_the_author(); ?>
             </div>
           </div>
           <div class="hidden lg:block text-sm px-4">•</div>
